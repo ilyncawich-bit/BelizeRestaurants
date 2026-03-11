@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South & East Belize | Tourism</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --belize-blue: #1d71b8; --belize-green: #387c2b; --belize-orange: #f7941d; --text: #2d3748; --bg: #f0f4f8; }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Montserrat', sans-serif; margin: 0; line-height: 1.6; }
+        
+        nav { background: white; border-bottom: 3px solid var(--belize-blue); padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav a { color: var(--belize-blue); text-decoration: none; font-weight: 700; margin: 0 20px; text-transform: uppercase; font-size: 0.85rem; transition: 0.3s ease; }
+        
+        /* The Orange Hover Effect (Fixed here too!) */
+        nav a:hover { color: var(--belize-orange); border-bottom: 2px solid var(--belize-orange); }
+
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 40px; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+        .banner-box { text-align: center; padding: 20px; }
+        .banner-img { width: 100%; max-width: 750px; height: auto; border-radius: 8px; }
+        
+        .logos { display: flex; justify-content: center; gap: 50px; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 30px; align-items: center; }
+        .logos img { height: 70px; width: auto; }
+
+        h1 { color: var(--belize-blue); font-size: 2rem; text-align: center; text-transform: uppercase; margin-top: 40px; }
+        h2 { color: var(--belize-green); font-size: 1.3rem; border-bottom: 3px solid var(--belize-orange); display: inline-block; margin-bottom: 10px; }
+
+        /* District Backgrounds */
+        .belize-dist-bg { background-color: #e1f5fe; } /* Coastal Blue */
+        .stann-bg { background-color: #fff3e0; }        /* Sandy Beach Orange */
+        .toledo-bg { background-color: #f1f8e9; }       /* Eco Green */
+
+        .card { margin-bottom: 50px; border: 1px solid #edf2f7; padding: 35px; border-radius: 15px; }
+        ul, ol { background: rgba(255,255,255,0.7); padding: 25px 50px; border-radius: 8px; border-left: 6px solid var(--belize-blue); }
+        .img-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+        .res-photo { width: 100%; height: 280px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+        .map-section { margin: 40px 0; padding: 10px; background: #fff; border: 3px solid var(--belize-blue); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        iframe { width: 100%; height: 500px; border: none; border-radius: 10px; display: block; }
+
+        .video-cta { text-align: center; margin: 50px 0; padding: 30px; background: #fffaf0; border-radius: 15px; }
+        .video-thumbnail { width: 110px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); transition: 0.3s; }
+        .video-thumbnail:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Northern/Western Districts</a>
+    <a href="southern.html">Southern/Eastern Districts</a>
+</nav>
+
+<div class="banner-box">
+    <img src="belize.jpg" alt="Belize Banner" class="banner-img">
+</div>
+
+<div class="container">
+    <div class="logos">
+        <img src="btb.png" alt="BTB">
+        <img src="btia.png" alt="BTIA">
+        <img src="beltraide.png" alt="Beltraide">
+    </div>
+
+    <h1>WELCOME LOCAL TOURISTS</h1>
+    <p>Experience the rhythmic soul of the South and the historic charm of our Eastern coast. We invite you to explore these districts where every meal is a celebration of our diverse heritage.</p>
+
+    <div class="card belize-dist-bg">
+        <h1>Belize District</h1>
+        <p>The gateway to the Jewel, where history and the Caribbean Sea meet.</p>
+        <h2>Vino Tinto Restaurant Bar and Grill</h2>
+        <p>A sophisticated dining experience combining grill favorites with a vibrant atmosphere.</p>
+        <ul>
+            <li>Grilled Steak Medallions</li>
+            <li>Signature Pasta Dishes</li>
+            <li>Craft Cocktails</li>
+        </ul>
+        <div class="img-grid">
+            <img src="belize1.jpg" class="res-photo" alt="Belize">
+            <img src="belize2.jpg" class="res-photo" alt="Belize">
+        </div>
+    </div>
+
+    <div class="card stann-bg">
+        <h1>Stann Creek District</h1>
+        <p>Home to the country's most beautiful beaches and rich Garifuna traditions.</p>
+        <h2>Tipsy Tuna</h2>
+        <p>A waterfront gem in Placencia perfect for local tourists seeking fresh seafood.</p>
+        <ol>
+            <li>Fish Tacos</li>
+            <li>Conch Fritters</li>
+            <li>Seaweed Shake</li>
+        </ol>
+        <div class="img-grid">
+            <img src="stann1.jpg" class="res-photo" alt="Stann Creek">
+            <img src="stann2.jpg" class="res-photo" alt="Stann Creek">
+        </div>
+    </div>
+
+    <div class="card toledo-bg">
+        <h1>Toledo District</h1>
+        <p>Belize's final frontier, offering pristine rainforests and chocolate adventures.</p>
+        <h2>Gomier's Restaurant Vegan and Seafood</h2>
+        <p>Renowned for healthy, flavorful dishes that celebrate both the sea and the garden.</p>
+        <ul>
+            <li>Vegan Tofu Curry</li>
+            <li>Steamed Fish in Coconut Milk</li>
+            <li>Homemade Sourdough Bread</li>
+        </ul>
+        <div class="img-grid">
+            <img src="toledo1.webp" class="res-photo" alt="Toledo">
+            <img src="toledo2.jpg" class="res-photo" alt="Toledo">
+        </div>
+    </div>
+
+    <h1>Explore the Region</h1>
+    <div class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1899176.3683100366!2d-88.56689035!3d17.1898749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbz!4v1700000000000!5m2!1sen!2sbz" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="video-cta">
+        <h3>Watch: Belize Under 3 Minutes</h3>
+        <a href="https://youtu.be/BaeihrThNBU" target="_blank">
+            <img src="youtube_icon.png" alt="YouTube Link" class="video-thumbnail">
+        </a>
+    </div>
+
+    <footer>
+        <p style="text-align: center;"><strong>Explore More:</strong> We invite you to explore even more culinary options across our country!</p>
+    </footer>
+</div>
+</body>
+</html>
